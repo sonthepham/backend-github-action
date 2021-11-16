@@ -96,7 +96,7 @@ jobs:
       - name: Login Docker Registry
         if: ${{ !env.ACT }}
         run: |
-          docker login -u sonthepham -p 1245678su sonthepham/sonpt
+          docker login -u sonthepham -p 046cbd93-70e3-45fc-8bee-f16d90730654
 
       # Push the Docker image to Docker Registry
       - name: Publish Docker image
