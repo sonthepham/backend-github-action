@@ -38,10 +38,10 @@ jobs:
         run: |
           npm ci
 
-      - name: Build source code
-        if: ${{ !env.ACT }}
-        run: |
-          npm run build   
+      # - name: Build source code
+      #  if: ${{ !env.ACT }}
+      #  run: |
+      #   npm run build   
   build-and-publish-image:
     name: Build and publish image
     runs-on: ubuntu-latest
